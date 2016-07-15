@@ -11,7 +11,7 @@ from threading import Thread
 class Rules():
 	def get_rules(self,):
 		rules_files = {}
-		for root, dirs, files in os.walk("rules-master"):
+		for root, dirs, files in os.walk("rules"):
 			for file in files:
 				if file.endswith(('.yar','.yara')):
 					full_file = (os.path.join(root, file))
